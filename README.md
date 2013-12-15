@@ -1,4 +1,4 @@
 RutineGenerator
 ===============
 
-Simple form to create a training rutine
+Simple form to create a training routine
