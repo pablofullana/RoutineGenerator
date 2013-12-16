@@ -1,4 +1,10 @@
 RutineGenerator::Application.routes.draw do
+
+  resources :routines
+  
+  get '/routines/:id/PDFFormat' => 'routines#PDFFormat', as: :PDFFormat_routine
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
