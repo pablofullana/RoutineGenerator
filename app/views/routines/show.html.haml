@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Ejercicio 1:
+  = @routine.ejercicio1
+%p
+  %b Ejercicio 2:
+  = @routine.ejercicio2
+%p
+  %b Ejercicio 3:
+  = @routine.ejercicio3
+
+= link_to 'Open as PDF', PDFFormat_routine_path(@routine), :target => "_blank"
+\|
+= link_to 'Edit', edit_routine_path(@routine)
+\|
+= link_to 'Back', routines_path
+
+
+
+

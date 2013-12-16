@@ -1,0 +1,19 @@
+= form_for @routine do |f|
+  - if @routine.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@routine.errors.count, "error")} prohibited this routine from being saved:"
+      %ul
+        - @routine.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label "Ejercicio 1"
+    = f.text_field :ejercicio1
+  .field
+    = f.label "Ejercicio 2"
+    = f.text_field :ejercicio2
+  .field
+    = f.label "Ejercicio 3"
+    = f.text_field :ejercicio3
+  .actions
+    = f.submit 'Save'
